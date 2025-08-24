@@ -1,4 +1,4 @@
-# Amplitude-Modulation
+<img width="691" height="441" alt="image" src="https://github.com/user-attachments/assets/26aee2f5-f6d0-4442-b5b4-6ed1029f1f9e" /># Amplitude-Modulation
 
 EXP NO: 1	GENERATION AND DETECTION OF AM
 
@@ -75,12 +75,26 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	Verify the generated waveform using Tabulation and Model Waveform
 
 Program
-
+Am=6.3;
+fm=485;
+Ac=12.6;
+fc=4850;
+fs=48500;
+t=0:1/fs:2/fm;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s=(Ac+m).*cos(2*3.14*fc*t);
+subplot(3,1,3);
+plot(t,s);
 
 
 Output Waveform
 
-
+<img width="691" height="441" alt="image" src="https://github.com/user-attachments/assets/0d2c8c91-f56a-4ec0-92e4-8c48505a2787" />
 
 
 
